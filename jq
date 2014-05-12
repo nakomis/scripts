@@ -1,0 +1,1 @@
+cat ~/scripts/jQuery | pbcopy

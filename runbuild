@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -f ~/buildlog
+touch ~/buildlog
+mvn clean install -Phandset,web,integration > ~/buildlog ; osascript -e 'tell app "Terminal" to display dialog "Build complete"' &
+tail -f ~/buildlog

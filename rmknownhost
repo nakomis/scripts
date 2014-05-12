@@ -1,0 +1,1 @@
+sed -i.bk /${1//./\\.}/d ~/.ssh/known_hosts

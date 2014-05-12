@@ -1,0 +1,6 @@
+#!/bin/bash
+FILE=`date +%Y-%m-%d`
+vim ~/Documents/commits/$FILE
+if [ $? -eq 0 ]; then
+  cat ~/Documents/commits/$FILE | pbcopy;
+fi
